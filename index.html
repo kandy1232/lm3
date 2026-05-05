@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AqwaGel - Educational Posters Sri Lanka | අධ්‍යාපනික පෝස්ටර් ශ්‍රී ලංකාව</title>
+    <meta name="description" content="Premium educational posters in Sri Lanka. World maps, solar systems, alphabet charts & more. Professional printing by Artyhomes Pvt Ltd since 2002.">
+    <meta name="description" lang="si" content="ශ්‍රී ලංකාවේ ප්‍රවීණ අධ්‍යාපනික පෝස්ටර්. ලෝක සිතියම්, සෞරග්‍රහ මණ්ඩලය, හෝඩිය සහ තවත්.">
+    <meta name="keywords" content="educational posters Sri Lanka, world map poster, Sinhala alphabet chart, solar system poster, school posters, Artyhomes">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="AqwaGel - Educational Posters Sri Lanka">
+    <meta property="og:description" content="Premium educational posters printed with professional-grade technology.">
+    <meta property="og:url" content="https://aqwagel.com">
+    <meta property="og:type" content="website">
+    <link rel="canonical" href="https://aqwagel.com">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://code.iconify.design/3/3.1.0/iconify.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+Sinhala:wght@400;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config={theme:{extend:{fontFamily:{sans:['Inter','Noto Sans Sinhala','sans-serif']}}}}
+    </script>
+    <style>
+        *{margin:0;padding:0;box-sizing:border-box}
+        body{font-family:'Inter','Noto Sans Sinhala',sans-serif;background:#FDFBF7;color:#2D2A26}
+        /* Warm subtle pattern background */
+        body::before{content:'';position:fixed;inset:0;z-index:-1;background-image:radial-gradient(circle at 20% 50%,rgba(59,130,246,0.03) 0%,transparent 50%),radial-gradient(circle at 80% 20%,rgba(251,191,36,0.04) 0%,transparent 50%),radial-gradient(circle at 50% 80%,rgba(34,197,94,0.03) 0%,transparent 50%);pointer-events:none}
+        .nav-bar{background:rgba(253,251,247,0.92);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);border-bottom:1px solid #EDE8E0}
+        .prod-card{background:#fff;border:1px solid #EDE8E0;border-radius:16px;overflow:hidden;transition:all .4s cubic-bezier(.16,1,.3,1);box-shadow:0 1px 3px rgba(0,0,0,0.04)}
+        .prod-card:hover{transform:translateY(-6px);box-shadow:0 16px 40px -8px rgba(0,0,0,0.1);border-color:#D6CFC4}
+        .cat-card{background:#fff;border:1px solid #EDE8E0;border-radius:16px;padding:24px;position:relative;overflow:hidden;transition:all .4s cubic-bezier(.16,1,.3,1);cursor:pointer}
+        .cat-card::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:var(--cat-color,#FF3B00);transform:scaleX(0);transform-origin:left;transition:transform .5s ease}
+        .cat-card:hover::before{transform:scaleX(1)}
+        .cat-card:hover{transform:translateY(-4px);box-shadow:0 12px 32px -6px rgba(0,0,0,0.08);border-color:#D6CFC4}
+        .info-card{background:#fff;border:1px solid #EDE8E0;border-radius:16px;padding:32px;transition:all .4s ease;box-shadow:0 1px 3px rgba(0,0,0,0.04)}
+        .info-card:hover{box-shadow:0 8px 24px -4px rgba(0,0,0,0.06)}
+        .product-img{transition:transform .7s cubic-bezier(.16,1,.3,1)}
+        .prod-card:hover .product-img{transform:scale(1.05)}
+        @keyframes fadeInUp{from{opacity:0;transform:translateY(30px)}to{opacity:1;transform:translateY(0)}}
+        @keyframes pulse-glow{0%,100%{box-shadow:0 0 20px rgba(37,211,102,0.3)}50%{box-shadow:0 0 40px rgba(37,211,102,0.5)}}
+        @keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-6px)}}
+        .anim-fiu{animation:fadeInUp .8s ease-out forwards;opacity:0}
+        .wa-float{animation:pulse-glow 2s ease-in-out infinite,float 3s ease-in-out infinite}
+        .page{display:none}.page.active{display:block}
+        .toast-box{position:fixed;bottom:100px;left:50%;transform:translateX(-50%) translateY(100px);opacity:0;transition:all .4s ease;z-index:9999;pointer-events:none}
+        .toast-box.show{transform:translateX(-50%) translateY(0);opacity:1;pointer-events:auto}
+        input:focus,select:focus,textarea:focus{outline:none;border-color:#3B82F6!important;box-shadow:0 0 0 3px rgba(59,130,246,0.1)}
+        ::-webkit-scrollbar{width:6px}::-webkit-scrollbar-track{background:#FDFBF7}::-webkit-scrollbar-thumb{background:#D6CFC4;border-radius:3px}
+        .admin-sidebar a.active-admin{background:rgba(59,130,246,0.08);color:#3B82F6;border-left:3px solid #3B82F6}
+        .sinhala{font-family:'Noto Sans Sinhala',sans-serif}
+        .nav-a{cursor:pointer}
+        .hero-warm{background:linear-gradient(135deg,#1E3A5F 0%,#2D5F8A 30%,#3B7CB8 60%,#4A8FCC 100%);color:#fff;position:relative;overflow:hidden}
+        .hero-warm::after{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 70% 30%,rgba(251,191,36,0.15) 0%,transparent 60%),radial-gradient(ellipse at 20% 80%,rgba(34,197,94,0.1) 0%,transparent 50%);pointer-events:none}
+        .footer-dark{background:#1E293B;color:#CBD5E1}
+        .admin-input{width:100%;background:#fff;border:1px solid #EDE8E0;border-radius:10px;padding:10px 16px;font-size:14px;color:#2D2A26}
+        .admin-input::placeholder{color:#A09890}
+        .admin-textarea{width:100%;background:#fff;border:1px solid #EDE8E0;border-radius:10px;padding:10px 16px;font-size:14px;color:#2D2A26;resize:none}
+        .admin-select{background:#fff;border:1px solid #EDE8E0;border-radius:10px;padding:8px 12px;font-size:14px;color:#2D2A26}
+        .badge{display:inline-flex;align-items:center;padding:4px 10px;border-radius:9999px;font-size:10px;font-weight:600;text-transform:uppercase;letter-spacing:0.05em}
+        .section-alt{background:linear-gradient(180deg,#F7F3ED 0%,#FDFBF7 100%)}
+        .section-white{background:#fff}
+        .warm-border{border-color:#EDE8E0}
+    </style>
+    <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"Organization","name":"AqwaGel","url":"https://aqwagel.com","logo":"https://z-cdn-media.chatglm.cn/files/4652d3a4-cb2f-40e9-b1eb-bc52c365b50e.png","description":"Premium educational posters in Sri Lanka. A subsidiary of Artyhomes Pvt Ltd.","parentOrganization":{"@type":"Organization","name":"Artyhomes Pvt Ltd","foundingDate":"2002"},"address":{"@type":"PostalAddress","streetAddress":"No 17, Wikramasinghepura","addressLocality":"Battaramulla","addressCountry":"LK"},"telephone":"+94717299504"}
+    </script>
+</head>
+<body class="min-h-screen overflow-x-hidden">
+
+<!-- NAVBAR -->
+<nav class="nav-bar fixed top-0 left-0 right-0 z-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between">
+        <div class="nav-a flex items-center gap-2.5" onclick="go('home')">
+            <img src="https://z-cdn-media.chatglm.cn/files/4652d3a4-cb2f-40e9-b1eb-bc52c365b50e.png?auth_key=1877948799-43bd55696cd547b381c105b94e6fc247-0-87302bc1e5e3638181685b51d1eac6d9" alt="AqwaGel - Educational Posters Sri Lanka" class="h-9 w-auto">
+        </div>
+        <div class="hidden md:flex items-center gap-8">
+            <span class="nav-a text-sm font-medium text-[#6B6560] hover:text-[#2D2A26] transition-colors" onclick="go('home')">Home</span>
+            <span class="nav-a text-sm font-medium text-[#6B6560] hover:text-[#2D2A26] transition-colors" onclick="go('home',null,'cats')">Categories</span>
+            <span class="nav-a text-sm font-medium text-[#6B6560] hover:text-[#2D2A26] transition-colors" onclick="go('about')">About</span>
+            <span class="nav-a text-sm font-medium text-[#6B6560] hover:text-[#2D2A26] transition-colors" onclick="go('contact')">Contact</span>
+            <span class="nav-a text-xs text-[#A09890] hover:text-[#6B6560] transition-colors flex items-center gap-1" onclick="go('admin-login')"><span class="iconify" data-icon="lucide:lock" data-width="12"></span>Admin</span>
+        </div>
+        <button id="mob-menu-btn" class="md:hidden text-[#6B6560] p-2"><span class="iconify" data-icon="lucide:menu" data-width="24"></span></button>
+    </div>
+    <div id="mob-menu" class="hidden md:hidden border-t border-[#EDE8E0] px-4 pb-4 pt-2 space-y-1 bg-white">
+        <div class="nav-a block py-3 text-sm text-[#6B6560] hover:text-[#2D2A26]" onclick="go('home');closeMob()">Home</div>
+        <div class="nav-a block py-3 text-sm text-[#6B6560] hover:text-[#2D2A26]" onclick="go('home',null,'cats');closeMob()">Categories</div>
+        <div class="nav-a block py-3 text-sm text-[#6B6560] hover:text-[#2D2A26]" onclick="go('about');closeMob()">About</div>
+        <div class="nav-a block py-3 text-sm text-[#6B6560] hover:text-[#2D2A26]" onclick="go('contact');closeMob()">Contact</div>
+        <div class="nav-a block py-3 text-sm text-[#A09890] hover:text-[#6B6560]" onclick="go('admin-login');closeMob()"><span class="iconify inline" data-icon="lucide:lock" data-width="12"></span> Admin</div>
+    </div>
+</nav>
+
+<!-- HOME -->
+<div id="page-home" class="page active">
+    <section class="hero-warm min-h-screen flex items-center justify-center pt-16">
+        <div class="absolute inset-0"><img src="https://picsum.photos/seed/edu-classroom/1920/1080" alt="" class="w-full h-full object-cover opacity-10" loading="eager"></div>
+        <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 text-center">
+            <div class="anim-fiu"><span class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 border border-white/20 text-xs font-medium text-blue-100 uppercase tracking-widest mb-8"><span class="w-2 h-2 rounded-full bg-green-400 animate-pulse"></span>Since 2002 · Artyhomes Legacy</span></div>
+            <h1 class="anim-fiu text-4xl sm:text-6xl lg:text-7xl font-semibold tracking-tight leading-[1.1] mb-6" style="animation-delay:.1s">Educational Posters<br><span class="text-yellow-300">for Every Classroom</span></h1>
+            <p class="anim-fiu max-w-2xl mx-auto text-blue-100 text-sm sm:text-base leading-relaxed mb-10" style="animation-delay:.2s">Premium-quality posters printed with professional-grade technology. Help your child learn faster with beautiful, durable wall charts — from world maps to Sinhala alphabet.</p>
+            <div class="anim-fiu flex flex-col sm:flex-row items-center justify-center gap-4" style="animation-delay:.3s">
+                <button onclick="document.getElementById('cats-sec')&&document.getElementById('cats-sec').scrollIntoView({behavior:'smooth'})" class="px-8 py-3.5 bg-[#FF3B00] text-white text-sm font-bold uppercase tracking-widest rounded-full hover:shadow-[0_0_30px_rgba(255,59,0,0.4)] transition-all">Browse Categories</button>
+                <a href="https://wa.me/94717299504?text=Hi%20AqwaGel!" target="_blank" class="px-8 py-3.5 bg-white/10 border border-white/25 text-white text-sm font-bold uppercase tracking-widest rounded-full hover:bg-white/20 transition-all flex items-center gap-2 no-underline"><span class="iconify" data-icon="lucide:message-circle" data-width="16"></span>WhatsApp Us</a>
+            </div>
+            <div class="anim-fiu mt-16 flex flex-wrap items-center justify-center gap-6 sm:gap-10 text-blue-200/70 text-xs uppercase tracking-widest" style="animation-delay:.4s">
+                <span class="flex items-center gap-2"><span class="iconify" data-icon="lucide:printer" data-width="14"></span>Pro Printing</span>
+                <span class="flex items-center gap-2"><span class="iconify" data-icon="lucide:shield-check" data-width="14"></span>Trusted Since 2002</span>
+                <span class="flex items-center gap-2"><span class="iconify" data-icon="lucide:truck" data-width="14"></span>Island Wide</span>
+                <span class="flex items-center gap-2"><span class="iconify" data-icon="lucide:heart" data-width="14"></span>Parent Approved</span>
+            </div>
+        </div>
+        <div class="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce"><span class="iconify text-blue-200/40" data-icon="lucide:chevron-down" data-width="24"></span></div>
+    </section>
+
+    <!-- Trust Bar -->
+    <section class="py-10 section-white border-b warm-border">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+            <div><div class="text-2xl sm:text-3xl font-bold text-[#2D2A26]">65+</div><div class="text-xs text-[#A09890] uppercase tracking-widest mt-1">Products</div></div>
+            <div><div class="text-2xl sm:text-3xl font-bold text-[#2D2A26]">12</div><div class="text-xs text-[#A09890] uppercase tracking-widest mt-1">Categories</div></div>
+            <div><div class="text-2xl sm:text-3xl font-bold text-[#2D2A26]">22+</div><div class="text-xs text-[#A09890] uppercase tracking-widest mt-1">Years Legacy</div></div>
+            <div><div class="text-2xl sm:text-3xl font-bold text-[#22C55E]">4.9★</div><div class="text-xs text-[#A09890] uppercase tracking-widest mt-1">Avg Rating</div></div>
+        </div>
+    </section>
+
+    <!-- Categories -->
+    <section id="cats-sec" class="py-20 sm:py-28 section-alt">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6">
+            <div class="text-center mb-14">
+                <span class="text-xs font-mono text-[#A09890] uppercase tracking-widest">Explore Our Collection</span>
+                <h2 class="text-3xl sm:text-5xl font-semibold tracking-tight mt-4 text-[#2D2A26]">12 Categories</h2>
+                <p class="text-[#6B6560] text-sm mt-4 max-w-xl mx-auto">Each category features carefully designed educational materials, printed with Artyhomes' professional-grade technology.</p>
+            </div>
+            <div id="cats-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5"></div>
+        </div>
+    </section>
+
+    <!-- Featured -->
+    <section class="py-20 section-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6">
+            <div class="flex items-end justify-between mb-12">
+                <div><span class="text-xs font-mono text-[#A09890] uppercase tracking-widest">Best Sellers</span><h2 class="text-3xl sm:text-4xl font-semibold tracking-tight mt-3 text-[#2D2A26]">Featured Products</h2></div>
+                <span class="hidden sm:flex items-center gap-2 text-sm text-[#3B82F6] hover:text-[#2563EB] transition-colors cursor-pointer font-medium" onclick="document.getElementById('cats-sec')&&document.getElementById('cats-sec').scrollIntoView({behavior:'smooth'})">View All <span class="iconify" data-icon="lucide:arrow-right" data-width="14"></span></span>
+            </div>
+            <div id="feat-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6"></div>
+        </div>
+    </section>
+
+    <!-- About Preview -->
+    <section class="py-20 section-alt relative overflow-hidden">
+        <div class="absolute top-0 right-0 w-96 h-96 bg-blue-500/5 rounded-full blur-[120px]"></div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 relative z-10">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <span class="text-xs font-mono text-[#A09890] uppercase tracking-widest">Our Heritage</span>
+                    <h2 class="text-3xl sm:text-5xl font-semibold tracking-tight mt-4 mb-6 text-[#2D2A26]">Powered by <span class="text-[#FF3B00]">22 Years</span> of Excellence</h2>
+                    <p class="text-[#6B6560] text-sm leading-relaxed mb-6"><strong class="text-[#2D2A26]">AqwaGel is a fully owned subsidiary of Artyhomes Pvt Ltd.</strong> The mother company has been a prominent wallpaper manufacturer and interior design leader in Sri Lanka since 2002.</p>
+                    <p class="text-[#6B6560] text-sm leading-relaxed mb-6">All our educational posters are produced using Artyhomes' professional-grade digital printing technology — ensuring vibrant colors, sharp details, and exceptional durability.</p>
+                    <div class="grid grid-cols-2 gap-4 mb-8">
+                        <div class="info-card"><span class="iconify text-[#FF3B00]" data-icon="lucide:printer" data-width="20"></span><div class="text-sm font-semibold mt-2 text-[#2D2A26]">Pro-Grade Printing</div><div class="text-xs text-[#A09890] mt-1">Industrial digital printers</div></div>
+                        <div class="info-card"><span class="iconify text-[#22C55E]" data-icon="lucide:shield-check" data-width="20"></span><div class="text-sm font-semibold mt-2 text-[#2D2A26]">Trusted Brand</div><div class="text-xs text-[#A09890] mt-1">Artyhomes since 2002</div></div>
+                    </div>
+                    <span class="text-sm text-[#3B82F6] hover:text-[#2563EB] flex items-center gap-1 cursor-pointer font-medium" onclick="go('about')">Learn more about us <span class="iconify" data-icon="lucide:arrow-right" data-width="14"></span></span>
+                </div>
+                <div class="relative">
+                    <div class="aspect-[4/3] rounded-2xl overflow-hidden border warm-border shadow-lg"><img src="https://picsum.photos/seed/artyhomes-factory/800/600" alt="Artyhomes Printing Facility" class="w-full h-full object-cover" loading="lazy"></div>
+                    <div class="absolute -bottom-6 -left-6 bg-white rounded-xl p-4 flex items-center gap-3 shadow-lg border warm-border">
+                        <div class="w-10 h-10 rounded-full bg-gradient-to-br from-blue-500 to-green-500 flex items-center justify-center"><span class="iconify text-white" data-icon="lucide:award" data-width="18"></span></div>
+                        <div><div class="text-sm font-semibold text-[#2D2A26]">ISO Certified</div><div class="text-xs text-[#A09890]">Quality Assured</div></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
+<!-- CATEGORY PAGE -->
+<div id="page-category" class="page">
+    <section class="pt-24 pb-32 section-alt min-h-screen">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6">
+            <span class="flex items-center gap-2 text-sm text-[#6B6560] hover:text-[#2D2A26] transition-colors cursor-pointer mb-8" onclick="go('home')"><span class="iconify" data-icon="lucide:arrow-left" data-width="14"></span>Back to Categories</span>
+            <div id="cat-header" class="mb-10"></div>
+            <div class="flex items-center justify-between mb-8">
+                <div class="text-sm text-[#A09890]"><span id="prod-count">0</span> products</div>
+                <select id="sort-sel" onchange="renderCatProds()" class="admin-select"><option value="default">Default</option><option value="price-low">Price: Low to High</option><option value="price-high">Price: High to Low</option><option value="rating">Top Rated</option></select>
+            </div>
+            <div id="cat-prods-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6"></div>
+        </div>
+    </section>
+</div>
+
+<!-- PRODUCT PAGE -->
+<div id="page-product" class="page">
+    <section class="pt-24 pb-32 section-alt min-h-screen">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6">
+            <span class="flex items-center gap-2 text-sm text-[#6B6560] hover:text-[#2D2A26] transition-colors cursor-pointer mb-8" id="prod-back-btn"><span class="iconify" data-icon="lucide:arrow-left" data-width="14"></span>Back</span>
+            <div id="prod-detail"></div>
+            <div id="prod-schema-el"></div>
+        </div>
+    </section>
+</div>
+
+<!-- ABOUT PAGE -->
+<div id="page-about" class="page">
+    <section class="pt-24 pb-32 section-alt min-h-screen">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6">
+            <span class="text-xs font-mono text-[#A09890] uppercase tracking-widest">About Us</span>
+            <h1 class="text-4xl sm:text-6xl font-semibold tracking-tight mt-4 mb-8 text-[#2D2A26]">Our Story</h1>
+            <div class="info-card mb-8">
+                <div class="flex items-start gap-4 mb-6">
+                    <div class="w-12 h-12 rounded-xl bg-gradient-to-br from-[#FF3B00] to-orange-500 flex items-center justify-center flex-shrink-0"><span class="iconify text-white" data-icon="lucide:building-2" data-width="22"></span></div>
+                    <div><h3 class="text-xl font-semibold text-[#2D2A26]">Company Structure</h3><p class="text-[#FF3B00] font-semibold mt-1">AqwaGel is a fully owned subsidiary of Artyhomes Pvt Ltd.</p></div>
+                </div>
+                <p class="text-[#6B6560] text-sm leading-relaxed">Artyhomes Pvt Ltd has been a prominent wallpaper manufacturer and interior design leader in Sri Lanka since 2002. With over two decades of experience in premium printing and design, Artyhomes expanded its vision into the educational sector through AqwaGel.</p>
+            </div>
+            <div class="grid md:grid-cols-2 gap-6 mb-8">
+                <div class="info-card"><span class="iconify text-[#3B82F6]" data-icon="lucide:printer" data-width="28"></span><h3 class="text-lg font-semibold mt-4 mb-3 text-[#2D2A26]">Printing Excellence</h3><p class="text-[#6B6560] text-sm leading-relaxed">All posters produced using Artyhomes' professional-grade digital printing technology — vibrant, fade-resistant colors and exceptional durability.</p></div>
+                <div class="info-card"><span class="iconify text-[#22C55E]" data-icon="lucide:graduation-cap" data-width="28"></span><h3 class="text-lg font-semibold mt-4 mb-3 text-[#2D2A26]">Educational Impact</h3><p class="text-[#6B6560] text-sm leading-relaxed">Designed in collaboration with educators to maximize learning outcomes — from early alphabet recognition to complex world geography.</p></div>
+                <div class="info-card"><span class="iconify text-[#F59E0B]" data-icon="lucide:palette" data-width="28"></span><h3 class="text-lg font-semibold mt-4 mb-3 text-[#2D2A26]">Bilingual Design</h3><p class="text-[#6B6560] text-sm leading-relaxed">Materials in both English and Sinhala, supporting Sri Lanka's bilingual education policy for accessibility across the country.</p></div>
+                <div class="info-card"><span class="iconify text-[#8B5CF6]" data-icon="lucide:map-pin" data-width="28"></span><h3 class="text-lg font-semibold mt-4 mb-3 text-[#2D2A26]">Island Wide Delivery</h3><p class="text-[#6B6560] text-sm leading-relaxed">Based in Battaramulla, delivering to schools, tuition centers, and homes across all 25 districts of Sri Lanka.</p></div>
+            </div>
+            <div class="info-card text-center">
+                <h3 class="text-2xl font-semibold mb-4 text-[#2D2A26]">Our Mission</h3>
+                <p class="text-[#6B6560] text-sm leading-relaxed max-w-2xl mx-auto">To make high-quality educational visuals accessible and affordable for every student in Sri Lanka, leveraging our parent company's 22+ years of printing excellence to transform learning spaces into inspiring environments.</p>
+            </div>
+        </div>
+    </section>
+</div>
+
+<!-- CONTACT PAGE -->
+<div id="page-contact" class="page">
+    <section class="pt-24 pb-32 section-alt min-h-screen">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6">
+            <span class="text-xs font-mono text-[#A09890] uppercase tracking-widest">Get in Touch</span>
+            <h1 class="text-4xl sm:text-6xl font-semibold tracking-tight mt-4 mb-12 text-[#2D2A26]">Contact Us</h1>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="space-y-5">
+                    <div class="info-card flex items-start gap-4 !p-6"><div class="w-10 h-10 rounded-lg bg-orange-50 flex items-center justify-center flex-shrink-0"><span class="iconify text-[#FF3B00]" data-icon="lucide:map-pin" data-width="18"></span></div><div><div class="text-sm font-semibold text-[#2D2A26]">Address</div><div class="text-sm text-[#6B6560] mt-1">No 17, Wikramasinghepura, Battaramulla, Sri Lanka</div></div></div>
+                    <div class="info-card flex items-start gap-4 !p-6"><div class="w-10 h-10 rounded-lg bg-green-50 flex items-center justify-center flex-shrink-0"><span class="iconify text-[#22C55E]" data-icon="lucide:phone" data-width="18"></span></div><div><div class="text-sm font-semibold text-[#2D2A26]">Phone / WhatsApp</div><a href="tel:+94717299504" class="text-sm text-[#6B6560] mt-1 hover:text-[#3B82F6] transition-colors block">+94 71 729 9504</a></div></div>
+                    <div class="info-card flex items-start gap-4 !p-6"><div class="w-10 h-10 rounded-lg bg-blue-50 flex items-center justify-center flex-shrink-0"><span class="iconify text-[#3B82F6]" data-icon="lucide:globe" data-width="18"></span></div><div><div class="text-sm font-semibold text-[#2D2A26]">Website</div><a href="https://aqwagel.com" class="text-sm text-[#6B6560] mt-1 hover:text-[#3B82F6] transition-colors block">aqwagel.com</a></div></div>
+                    <div class="info-card flex items-start gap-4 !p-6"><div class="w-10 h-10 rounded-lg bg-purple-50 flex items-center justify-center flex-shrink-0"><span class="iconify text-[#8B5CF6]" data-icon="lucide:building-2" data-width="18"></span></div><div><div class="text-sm font-semibold text-[#2D2A26]">Parent Company</div><div class="text-sm text-[#6B6560] mt-1">Artyhomes Pvt Ltd (Est. 2002)</div></div></div>
+                </div>
+                <div class="info-card">
+                    <h3 class="text-lg font-semibold mb-6 text-[#2D2A26]">Send a Message</h3>
+                    <form onsubmit="sendContact(event)" class="space-y-4">
+                        <input type="text" placeholder="Your Name" required class="admin-input">
+                        <input type="tel" placeholder="Phone Number" required class="admin-input">
+                        <input type="email" placeholder="Email (Optional)" class="admin-input">
+                        <textarea placeholder="Your Message" rows="4" required class="admin-textarea"></textarea>
+                        <button type="submit" class="w-full py-3.5 bg-[#3B82F6] text-white text-sm font-bold uppercase tracking-widest rounded-lg hover:bg-[#2563EB] transition-all">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
+<!-- ADMIN LOGIN -->
+<div id="page-admin-login" class="page">
+    <section class="min-h-screen flex items-center justify-center pt-16 section-alt">
+        <div class="bg-white rounded-2xl p-8 w-full max-w-sm mx-4 shadow-lg border warm-border">
+            <div class="text-center mb-8"><span class="iconify text-[#3B82F6] mx-auto" data-icon="lucide:shield" data-width="32"></span><h2 class="text-xl font-semibold mt-4 text-[#2D2A26]">Admin Login</h2><p class="text-xs text-[#A09890] mt-2">AqwaGel Product Management</p></div>
+            <form onsubmit="adminLogin(event)" class="space-y-4">
+                <input type="text" id="adm-user" placeholder="Username" required class="admin-input">
+                <input type="password" id="adm-pass" placeholder="Password" required class="admin-input">
+                <div id="login-err" class="text-xs text-red-500 hidden">Invalid credentials.</div>
+                <button type="submit" class="w-full py-3.5 bg-[#3B82F6] text-white text-sm font-bold uppercase tracking-widest rounded-lg hover:bg-[#2563EB] transition-all">Login</button>
+            </form>
+            <div class="w-full mt-4 py-3 text-sm text-[#A09890] hover:text-[#6B6560] transition-colors text-center cursor-pointer" onclick="go('home')">← Back to Store</div>
+        </div>
+    </section>
+</div>
+
+<!-- ADMIN DASHBOARD -->
+<div id="page-admin" class="page">
+    <div class="flex min-h-screen pt-16 section-alt">
+        <aside class="hidden md:flex w-64 border-r warm-border flex-col bg-white flex-shrink-0">
+            <div class="p-6 border-b warm-border"><div class="text-sm font-semibold text-[#2D2A26]">Admin Panel</div><div class="text-xs text-[#A09890] mt-1">aqwagel.com</div></div>
+            <nav class="flex-1 p-4 space-y-1" id="adm-sidebar">
+                <a class="active-admin flex items-center gap-3 px-4 py-2.5 rounded-lg text-sm text-[#6B6560] hover:text-[#2D2A26] transition-colors cursor-pointer" onclick="admTab('products')"><span class="iconify" data-icon="lucide:package" data-width="16"></span>Products</a>
+                <a class="flex items-center gap-3 px-4 py-2.5 rounded-lg text-sm text-[#6B6560] hover:text-[#2D2A26] transition-colors cursor-pointer" onclick="admTab('seo')"><span class="iconify" data-icon="lucide:search" data-width="16"></span>SEO Settings</a>
+                <a class="flex items-center gap-3 px-4 py-2.5 rounded-lg text-sm text-[#6B6560] hover:text-[#2D2A26] transition-colors cursor-pointer" onclick="admTab('add')"><span class="iconify" data-icon="lucide:plus-circle" data-width="16"></span>Add Product</a>
+            </nav>
+            <div class="p-4 border-t warm-border"><div class="flex items-center gap-3 px-4 py-2.5 rounded-lg text-sm text-[#A09890] hover:text-red-500 transition-colors cursor-pointer" onclick="adminOut()"><span class="iconify" data-icon="lucide:log-out" data-width="16"></span>Logout</div></div>
+        </aside>
+        <div class="md:hidden fixed top-16 left-0 right-0 z-40 bg-white border-b warm-border flex">
+            <button onclick="admTab('products')" class="adm-mob flex-1 py-3 text-xs text-center" data-t="products" style="color:#3B82F6;border-bottom:2px solid #3B82F6">Products</button>
+            <button onclick="admTab('seo')" class="adm-mob flex-1 py-3 text-xs text-center text-[#A09890]" data-t="seo">SEO</button>
+            <button onclick="admTab('add')" class="adm-mob flex-1 py-3 text-xs text-center text-[#A09890]" data-t="add">Add</button>
+            <button onclick="adminOut()" class="flex-1 py-3 text-xs text-center text-red-500">Logout</button>
+        </div>
+        <main class="flex-1 p-4 sm:p-8 md:mt-0 mt-12 overflow-y-auto">
+            <div id="at-products" class="adm-t">
+                <div class="flex items-center justify-between mb-6"><h2 class="text-xl font-semibold text-[#2D2A26]">All Products</h2><button onclick="admTab('add')" class="px-4 py-2 bg-[#3B82F6] text-white text-xs font-bold uppercase tracking-widest rounded-lg">+ Add New</button></div>
+                <div class="mb-4"><select id="adm-cat-f" onchange="renderAdmProds()" class="admin-select"><option value="all">All Categories</option></select></div>
+                <div id="adm-prods-list" class="space-y-3"></div>
+            </div>
+            <div id="at-seo" class="adm-t hidden">
+                <h2 class="text-xl font-semibold mb-6 text-[#2D2A26]">SEO Settings — Bilingual Meta</h2>
+                <form onsubmit="saveSEO(event)" class="space-y-6">
+                    <div class="info-card"><h3 class="text-sm font-semibold mb-4 text-[#22C55E]">English Meta</h3><label class="block text-xs text-[#A09890] mb-2">Meta Title</label><input type="text" id="seo-t-en" class="admin-input mb-4"><label class="block text-xs text-[#A09890] mb-2">Meta Description</label><textarea id="seo-d-en" rows="3" class="admin-textarea"></textarea></div>
+                    <div class="info-card"><h3 class="text-sm font-semibold mb-4 text-[#3B82F6]">සිංහල Meta</h3><label class="block text-xs text-[#A09890] mb-2 sinhala">මෙටා මාතෘකාව</label><input type="text" id="seo-t-si" class="admin-input mb-4 sinhala"><label class="block text-xs text-[#A09890] mb-2 sinhala">මෙටා විස්තරය</label><textarea id="seo-d-si" rows="3" class="admin-textarea sinhala"></textarea></div>
+                    <button type="submit" class="px-8 py-3.5 bg-[#3B82F6] text-white text-sm font-bold uppercase tracking-widest rounded-lg">Save SEO Settings</button>
+                </form>
+            </div>
+            <div id="at-add" class="adm-t hidden">
+                <h2 id="adm-form-title" class="text-xl font-semibold mb-6 text-[#2D2A26]">Add New Product</h2>
+                <form id="prod-form" onsubmit="saveProd(event)" class="space-y-5">
+                    <input type="hidden" id="ed-id" value="">
+                    <div class="grid sm:grid-cols-2 gap-5"><div><label class="block text-xs text-[#A09890] mb-2">Product Name (English)</label><input type="text" id="p-name" required class="admin-input"></div><div><label class="block text-xs text-[#A09890] mb-2 sinhala">නම (සිංහල)</label><input type="text" id="p-namesi" class="admin-input sinhala"></div></div>
+                    <div><label class="block text-xs text-[#A09890] mb-2">Category</label><select id="p-cat" required class="admin-select w-full"></select></div>
+                    <div class="grid sm:grid-cols-2 gap-5"><div><label class="block text-xs text-[#A09890] mb-2">Price (LKR)</label><input type="number" id="p-price" required min="0" class="admin-input"></div><div><label class="block text-xs text-[#A09890] mb-2">Stock</label><select id="p-stock" class="admin-select w-full"><option value="in-stock">In Stock</option><option value="out-of-stock">Out of Stock</option></select></div></div>
+                    <div><label class="block text-xs text-[#A09890] mb-2">Description (English)</label><textarea id="p-desc" rows="3" class="admin-textarea"></textarea></div>
+                    <div><label class="block text-xs text-[#A09890] mb-2 sinhala">විස්තරය (සිංහල)</label><textarea id="p-descsi" rows="3" class="admin-textarea sinhala"></textarea></div>
+                    <div><label class="block text-xs text-[#A09890] mb-2">Image URL (blank = auto)</label><input type="text" id="p-img" class="admin-input" placeholder="https://..."></div>
+                    <div class="grid sm:grid-cols-2 gap-5"><div><label class="block text-xs text-[#A09890] mb-2">SEO Title (EN)</label><input type="text" id="p-sten" class="admin-input"></div><div><label class="block text-xs text-[#A09890] mb-2 sinhala">SEO මාතෘකාව</label><input type="text" id="p-stsi" class="admin-input sinhala"></div></div>
+                    <div class="grid sm:grid-cols-2 gap-5"><div><label class="block text-xs text-[#A09890] mb-2">SEO Desc (EN)</label><textarea id="p-sden" rows="2" class="admin-textarea"></textarea></div><div><label class="block text-xs text-[#A09890] mb-2 sinhala">SEO විස්තරය</label><textarea id="p-sdsi" rows="2" class="admin-textarea sinhala"></textarea></div></div>
+                    <div class="flex gap-4"><button type="submit" class="px-8 py-3.5 bg-[#3B82F6] text-white text-sm font-bold uppercase tracking-widest rounded-lg">Save Product</button><button type="button" onclick="clearProdForm();admTab('products')" class="px-8 py-3.5 border warm-border text-[#6B6560] text-sm font-bold uppercase tracking-widest rounded-lg hover:bg-white transition-all">Cancel</button></div>
+                </form>
+            </div>
+        </main>
+    </div>
+</div>
+
+<!-- FOOTER -->
+<footer class="footer-dark">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 py-16">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12">
+            <div>
+                <div class="flex items-center gap-2.5 mb-4 cursor-pointer" onclick="go('home')"><img src="https://z-cdn-media.chatglm.cn/files/4652d3a4-cb2f-40e9-b1eb-bc52c365b50e.png?auth_key=1877948799-43bd55696cd547b381c105b94e6fc247-0-87302bc1e5e3638181685b51d1eac6d9" alt="AqwaGel" class="h-8 w-auto"></div>
+                <p class="text-xs text-gray-400 leading-relaxed">AqwaGel is a fully owned subsidiary of Artyhomes Pvt Ltd. Premium educational posters printed with professional-grade technology since 2002.</p>
+            </div>
+            <div><h4 class="text-xs font-bold uppercase tracking-widest text-gray-300 mb-4">Categories</h4><div class="space-y-2" id="ft-cats"></div></div>
+            <div><h4 class="text-xs font-bold uppercase tracking-widest text-gray-300 mb-4">Quick Links</h4><div class="space-y-2"><div class="text-xs text-gray-400 hover:text-white transition-colors cursor-pointer" onclick="go('home')">Home</div><div class="text-xs text-gray-400 hover:text-white transition-colors cursor-pointer" onclick="go('about')">About Us</div><div class="text-xs text-gray-400 hover:text-white transition-colors cursor-pointer" onclick="go('contact')">Contact</div><a href="https://wa.me/94717299504" target="_blank" class="block text-xs text-gray-400 hover:text-white transition-colors">WhatsApp Order</a></div></div>
+            <div><h4 class="text-xs font-bold uppercase tracking-widest text-gray-300 mb-4">Contact</h4><div class="space-y-3"><div class="flex items-start gap-2"><span class="iconify text-gray-500 mt-0.5" data-icon="lucide:map-pin" data-width="12"></span><span class="text-xs text-gray-400">No 17, Wikramasinghepura, Battaramulla</span></div><div class="flex items-center gap-2"><span class="iconify text-gray-500" data-icon="lucide:phone" data-width="12"></span><a href="tel:+94717299504" class="text-xs text-gray-400 hover:text-white transition-colors">+94 71 729 9504</a></div><div class="flex items-center gap-2"><span class="iconify text-gray-500" data-icon="lucide:globe" data-width="12"></span><a href="https://aqwagel.com" class="text-xs text-gray-400 hover:text-white transition-colors">aqwagel.com</a></div></div></div>
+        </div>
+        <div class="border-t border-gray-700 mt-12 pt-8 flex flex-col sm:flex-row items-center justify-between gap-4">
+            <p class="text-xs text-gray-500">© 2024 AqwaGel — A subsidiary of Artyhomes Pvt Ltd. All rights reserved.</p>
+            <p class="text-xs text-gray-600">Professional-grade printing technology</p>
+        </div>
+    </div>
+</footer>
+
+<!-- WhatsApp Float -->
+<a href="https://wa.me/94717299504?text=Hi%20AqwaGel!" target="_blank" class="fixed bottom-6 right-6 z-50 w-14 h-14 bg-[#25D366] rounded-full flex items-center justify-center wa-float hover:scale-110 transition-transform" aria-label="WhatsApp"><svg width="26" height="26" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg></a>
+
+<!-- Toast -->
+<div id="toast-el" class="toast-box bg-white rounded-xl px-6 py-3 text-sm font-semibold shadow-lg border warm-border text-[#2D2A26]"></div>
+
+<script>
+var CATS=[
+    {id:'world-map',name:'World Map Poster',si:'ලෝක සිතියම් පෝස්ටරය',color:'#3B82F6',icon:'lucide:globe-2',seed:'worldmap'},
+    {id:'sl-map',name:'Sri Lankan Map',si:'ශ්‍රී ලංකා සිතියම',color:'#22C55E',icon:'lucide:map',seed:'srilankamap'},
+    {id:'solar-system',name:'Solar System',si:'සෞරග්‍රහ මණ්ඩලය',color:'#8B5CF6',icon:'lucide:orbit',seed:'solarsystem'},
+    {id:'human-body',name:'Human Body Chart',si:'මිනිස් සිරුරේ අවයව සටහන',color:'#EF4444',icon:'lucide:heart-pulse',seed:'humanbody'},
+    {id:'coloring',name:'Giant Coloring Poster',si:'යෝධ පාට කරන පෝස්ටරය',color:'#F59E0B',icon:'lucide:paintbrush',seed:'coloringposter'},
+    {id:'sinhala-alpha',name:'Sinhala Alphabet Chart',si:'සිංහල හෝඩිය',color:'#EC4899',icon:'lucide:book-open',seed:'sinhalaalphabet'},
+    {id:'multiplication',name:'Multiplication Table',si:'ගුණ කිරීමේ වගුව',color:'#06B6D4',icon:'lucide:calculator',seed:'multiplication'},
+    {id:'national-symbols',name:'Sri Lanka National Symbols',si:'ශ්‍රී ලංකාවේ ජාතික සංකේත',color:'#D97706',icon:'lucide:flag',seed:'nationalsymbols'},
+    {id:'history',name:'History of Sri Lanka',si:'ලංකාවේ ඉතිහාසය',color:'#78716C',icon:'lucide:landmark',seed:'historysl'},
+    {id:'insects',name:'World of Insects',si:'කෘමි සතුන්ගේ ලෝකය',color:'#84CC16',icon:'lucide:bug',seed:'insectsworld'},
+    {id:'animals',name:'World of Animals',si:'සතුන්ගේ ලෝකය',color:'#F97316',icon:'lucide:paw-print',seed:'animalsworld'},
+    {id:'stationery',name:'Educational Stationery Set',si:'අධ්‍යාපනික ලිපි ද්‍රව්‍ය කට්ටලය',color:'#6366F1',icon:'lucide:pencil',seed:'stationeryset'}
+];
+var DEFAULTS=[
+    {id:'wm1',cat:'world-map',name:'Political World Map - Large',si:'දේශපාලන ලෝක සිතියම - විශාල',price:1490,stock:1,rate:4.8,rev:42,desc:'Detailed political world map showing all countries, capitals, and major cities.',descSi:'සියලුම රටවල්, අගනගර සහ ප්‍රධාන නගර පෙන්වන සවිස්තරාත්මක දේශපාලන ලෝක සිතියම.',seed:'wm-political-lg'},
+    {id:'wm2',cat:'world-map',name:'Physical World Map - Topographic',si:'භෞතික ලෝක සිතියම',price:1690,stock:1,rate:4.9,rev:28,desc:'Topographic world map with elevation shading, mountain ranges, and deserts.',descSi:'උන්නතාංශ අඳුරු කිරීම, කඳු මුදුන් සහ වියළිබිම් සහිත භූගෝලීය ලෝක සිතියම.',seed:'wm-topo'},
+    {id:'wm3',cat:'world-map',name:'Kids World Map - Illustrated',si:'ළමා ලෝක සිතියම',price:990,stock:1,rate:4.7,rev:65,desc:'Colorful illustrated world map with animals and landmarks for children.',descSi:'සතුන් සහ ස්මාරක සහිත වර්ණවත් ලෝක සිතියම.',seed:'wm-kids'},
+    {id:'wm4',cat:'world-map',name:'Vintage Style World Map',si:'පැරණි මෝස්තර ලෝක සිතියම',price:1890,stock:0,rate:4.6,rev:15,desc:'Antique-style world map with sepia tones for office or study room.',descSi:'සෙපියා පැහැයන් සහිත පැරණි මෝස්තර ලෝක සිතියම.',seed:'wm-vintage'},
+    {id:'sl1',cat:'sl-map',name:'Sri Lanka Political Map',si:'ශ්‍රී ලංකා දේශපාලන සිතියම',price:890,stock:1,rate:4.9,rev:88,desc:'Detailed map showing all 9 provinces, 25 districts, and major cities.',descSi:'සියලුම 9 පළාත්, 25 දිස්ත්‍රික්ක සහ ප්‍රධාන නගර.',seed:'sl-political'},
+    {id:'sl2',cat:'sl-map',name:'Sri Lanka Physical Map',si:'ශ්‍රී ලංකා භෞතික සිතියම',price:990,stock:1,rate:4.7,rev:34,desc:'Physical map showing elevation, rivers, mountains.',descSi:'උන්නතාංශ, ගංගා, කඳු පෙන්වන භෞතික සිතියම.',seed:'sl-physical'},
+    {id:'sl3',cat:'sl-map',name:'Sri Lanka Tourist Map',si:'ශ්‍රී ලංකා සංචාරක සිතියම',price:790,stock:1,rate:4.5,rev:52,desc:'Tourist map highlighting attractions, beaches, and heritage sites.',descSi:'ආකර්ෂණ, මුහුදු වෙරළ සහ උරුමයන් ඉස්මතු කරන සංචාරක සිතියම.',seed:'sl-tourist'},
+    {id:'ss1',cat:'solar-system',name:'Solar System - Detailed',si:'සෞරග්‍රහ මණ්ඩලය - සවිස්තරාත්මක',price:1290,stock:1,rate:4.9,rev:71,desc:'Comprehensive poster with all 8 planets and key facts.',descSi:'සියලුම 8 ග්‍රහයින් සහ ප්‍රධාන කරුණු සහිත පෝස්ටරය.',seed:'ss-detailed'},
+    {id:'ss2',cat:'solar-system',name:'Kids Solar System - Colorful',si:'ළමා සෞරග්‍රහ මණ්ඩලය',price:890,stock:1,rate:4.8,rev:93,desc:'Bright solar system poster for young learners.',descSi:'බාල ඉගෙනීම්කරුවන් සඳහා දීප්තිමත් පෝස්ටරය.',seed:'ss-kids'},
+    {id:'ss3',cat:'solar-system',name:'Solar System with Moons',si:'චන්ද්‍රයන් සහිත සෞරග්‍රහ මණ්ඩලය',price:1490,stock:1,rate:4.7,rev:22,desc:'Extended map including major moons of each planet.',descSi:'සෑම ග්‍රහයෙකම ප්‍රධාන චන්ද්‍රයන් ඇතුළත්.',seed:'ss-moons'},
+    {id:'hb1',cat:'human-body',name:'Human Anatomy - Full Body',si:'මිනිස් ශරීර රූප සටහන',price:1490,stock:1,rate:4.8,rev:56,desc:'Complete anatomy chart with all major organ systems.',descSi:'සියලුම ප්‍රධාන අවයව පද්ධති සහිත සම්පූර්ණ සටහන.',seed:'hb-full'},
+    {id:'hb2',cat:'human-body',name:'Digestive System Chart',si:'ජීරණ පද්ධති සටහන',price:990,stock:1,rate:4.6,rev:29,desc:'Detailed digestive system diagram with labels.',descSi:'සටහන් සහිත සවිස්තරාත්මක ජීරණ පද්ධති රූපසටහන.',seed:'hb-digestive'},
+    {id:'hb3',cat:'human-body',name:'Skeletal System Poster',si:'ස්නායු පද්ධති පෝස්ටරය',price:1190,stock:1,rate:4.7,rev:31,desc:'Complete skeletal system with all 206 bones labeled.',descSi:'සියලුම 206 අස්ථි සලකුණු කර ඇති ස්නායු පද්ධතිය.',seed:'hb-skeletal'},
+    {id:'cl1',cat:'coloring',name:'Ocean World Coloring Poster',si:'සාගර ලෝක පාට පෝස්ටරය',price:690,stock:1,rate:4.9,rev:112,desc:'Huge 1.2m x 0.8m underwater world coloring poster.',descSi:'1.2m x 0.8m සාගර ලෝක තේමාවක් සහිත යෝධ පාට පෝස්ටරය.',seed:'cl-ocean'},
+    {id:'cl2',cat:'coloring',name:'Safari Animals Coloring',si:'සෆාරි සතුන් පාට පෝස්ටරය',price:690,stock:1,rate:4.8,rev:87,desc:'Giant coloring poster with African safari animals.',descSi:'අප්‍රිකානු සෆාරි සතුන් ඇතුළත් යෝධ පාට පෝස්ටරය.',seed:'cl-safari'},
+    {id:'cl3',cat:'coloring',name:'Space Coloring Poster',si:'අභ්‍යවකාශ පාට පෝස්ටරය',price:690,stock:1,rate:4.7,rev:64,desc:'Space-themed coloring poster with rockets and astronauts.',descSi:'රොකට් සහ අභ්‍යවකාශ ගමන් වියදම්කරුවන් සහිත පෝස්ටරය.',seed:'cl-space'},
+    {id:'sa1',cat:'sinhala-alpha',name:'Sinhala Alphabet - Standard',si:'සිංහල හෝඩිය - සම්මත',price:690,stock:1,rate:4.9,rev:156,desc:'Complete Sinhala alphabet chart with all vowels and consonants.',descSi:'සියලුම ස්වර සහ ව්‍යංජන සහිත සම්පූර්ණ හෝඩිය.',seed:'sa-standard'},
+    {id:'sa2',cat:'sinhala-alpha',name:'Sinhala Alphabet - Pictures',si:'සිංහල හෝඩිය - රූප සහිත',price:890,stock:1,rate:4.8,rev:98,desc:'Sinhala alphabet with illustrated examples for each letter.',descSi:'සෑම අකුරකටම නිදර්ශන සහිත හෝඩිය.',seed:'sa-pictures'},
+    {id:'sa3',cat:'sinhala-alpha',name:'Sinhala Alphabet - Laminated',si:'සිංහල හෝඩිය - ලැමිනේට්',price:1090,stock:1,rate:4.9,rev:73,desc:'Premium laminated chart — waterproof and durable.',descSi:'ජල රෝධක සහ ඔරොත්තු දෙන ලැමිනේට් හෝඩිය.',seed:'sa-laminated'},
+    {id:'mt1',cat:'multiplication',name:'Multiplication Table 1-12',si:'ගුණ කිරීමේ වගුව 1-12',price:490,stock:1,rate:4.8,rev:134,desc:'Classic multiplication table from 1x1 to 12x12.',descSi:'1x1 සිට 12x12 දක්වා සාම්ප්‍රදායික වගුව.',seed:'mt-1to12'},
+    {id:'mt2',cat:'multiplication',name:'Multiplication Table 1-20',si:'ගුණ කිරීමේ වගුව 1-20',price:590,stock:1,rate:4.7,rev:67,desc:'Extended table from 1x1 to 20x20.',descSi:'1x1 සිට 20x20 දක්වා විස්තීර්ණ වගුව.',seed:'mt-1to20'},
+    {id:'mt3',cat:'multiplication',name:'Colorful Multiplication Chart',si:'වර්ණවත් ගුණ සටහන',price:690,stock:1,rate:4.9,rev:89,desc:'Color-coded chart that makes patterns easy to spot.',descSi:'රටා හඳුනා ගැනීමට පහසු වර්ණ-කේතනය කළ සටහන.',seed:'mt-colorful'},
+    {id:'ns1',cat:'national-symbols',name:'National Symbols Chart',si:'ජාතික සංකේත සටහන',price:790,stock:1,rate:4.9,rev:95,desc:'Complete chart of all Sri Lankan national symbols.',descSi:'ශ්‍රී ලංකාවේ සියලුම ජාතික සංකේත.',seed:'ns-complete'},
+    {id:'ns2',cat:'national-symbols',name:'National Symbols - Bilingual',si:'ජාතික සංකේත - ද්වීභාෂා',price:890,stock:1,rate:4.8,rev:48,desc:'Bilingual national symbols chart.',descSi:'ද්වීභාෂා ජාතික සංකේත සටහන.',seed:'ns-bilingual'},
+    {id:'hi1',cat:'history',name:'History Timeline',si:'ඉතිහාස කාල රේඛාව',price:1290,stock:1,rate:4.7,rev:42,desc:'Comprehensive timeline from pre-historic to modern Sri Lanka.',descSi:'ප්‍රාග්-ඓතිහාසික යුගයේ සිට නවීන ශ්‍රී ලංකාව දක්වා.',seed:'hi-timeline'},
+    {id:'hi2',cat:'history',name:'Ancient Kingdoms',si:'පුරාණ රාජධානි',price:1190,stock:1,rate:4.8,rev:36,desc:'Map of Anuradhapura, Polonnaruwa, and other ancient kingdoms.',descSi:'අනුරාධපුර, පොළොන්නරුව සහ අනෙකුත් රාජධානි.',seed:'hi-kingdoms'},
+    {id:'in1',cat:'insects',name:'World of Insects',si:'කෘමි සතුන්ගේ ලෝකය',price:1090,stock:1,rate:4.7,rev:45,desc:'50+ insect species with scientific names.',descSi:'විද්‍යාත්මක නාම සහිත 50+ කෘමි විශේෂ.',seed:'in-comprehensive'},
+    {id:'in2',cat:'insects',name:'Sri Lankan Insects',si:'ශ්‍රී ලංකානු කෘමි',price:990,stock:1,rate:4.6,rev:28,desc:'Endemic and common insects with Sinhala and English names.',descSi:'ශ්‍රී ලංකාවේ ආවේණික සහ සුලබ කෘමීන්.',seed:'in-srilankan'},
+    {id:'an1',cat:'animals',name:'World Animals Encyclopedia',si:'ලෝක සතුන් විශ්වකෝෂය',price:1290,stock:1,rate:4.9,rev:78,desc:'Animals from every continent with habitat info.',descSi:'සෑම මහද්වීපයකම සතුන් වාසස්ථාන තොරතුරු.',seed:'an-encyclopedia'},
+    {id:'an2',cat:'animals',name:'Sri Lankan Wildlife',si:'ශ්‍රී ලංකානු වන සතුන්',price:1090,stock:1,rate:4.8,rev:62,desc:'Endemic wildlife including leopard and purple-faced langur.',descSi:'දිලීර සහ පැහැපත් මුහුණැති ලංගූර් ඇතුළු ආවේණික වන සතුන්.',seed:'an-wildlife'},
+    {id:'an3',cat:'animals',name:'Marine Life Poster',si:'මුහුදු ජීවිත පෝස්ටරය',price:990,stock:0,rate:4.7,rev:33,desc:'Marine life poster with fish, corals, whales, dolphins.',descSi:'මාළු, කොරල්, තල්මසුන් සහ ඩොල්ෆින්.',seed:'an-marine'},
+    {id:'st1',cat:'stationery',name:'Complete Stationery Set',si:'සම්පූර්ණ ලිපි ද්‍රව්‍ය කට්ටලය',price:2490,stock:1,rate:4.8,rev:54,desc:'Complete educational stationery set for primary students.',descSi:'ප්‍රාථමික සිසුන් සඳහා සම්පූර්ණ කට්ටලය.',seed:'st-primary'},
+    {id:'st2',cat:'stationery',name:'Art & Craft Set',si:'කලා හා අත්කම් කට්ටලය',price:1890,stock:1,rate:4.7,rev:41,desc:'Art supplies with crayons, color pencils, water colors.',descSi:'ක්‍රේයොන්, වර්ණ පැන්සිල්, ජල වර්ණ සහිත කට්ටලය.',seed:'st-art'},
+    {id:'st3',cat:'stationery',name:'Math Geometry Set',si:'ගණිත ජ්‍යාමිති කට්ටලය',price:790,stock:1,rate:4.6,rev:37,desc:'Geometry set with compass, protractor, set squares.',descSi:'කොම්පස්, ප්‍රක්ටරක්ටර්, සෙට් ස්ක්වෙයාර් සහිත කට්ටලය.',seed:'st-geometry'}
+];
+
+var prods=[],curCat=null,curProd=null,uRatings={};
+function init(){try{var s=localStorage.getItem('aqwagel_prods_v2');prods=s?JSON.parse(s):JSON.parse(JSON.stringify(DEFAULTS));if(!s)localStorage.setItem('aqwagel_prods_v2',JSON.stringify(prods));uRatings=JSON.parse(localStorage.getItem('aqwagel_rat')||'{}');}catch(e){prods=JSON.parse(JSON.stringify(DEFAULTS));}renderCats();renderFeat();renderFtCats();fillAdmSels();loadSEO();document.getElementById('mob-menu-btn').addEventListener('click',function(){document.getElementById('mob-menu').classList.toggle('hidden');});}
+
+function go(page,data,extra){var pages=document.querySelectorAll('.page');for(var i=0;i<pages.length;i++)pages[i].classList.remove('active');var el=document.getElementById('page-'+page);if(el){el.classList.add('active');window.scrollTo({top:0,behavior:'smooth'});document.getElementById('mob-menu').classList.add('hidden');}if(page==='category'&&data){curCat=data;setTimeout(function(){renderCatPage();},50);}if(page==='product'&&data){curProd=data;setTimeout(function(){renderProdPage();},50);}if(page==='home'&&extra==='cats'){setTimeout(function(){var s=document.getElementById('cats-sec');if(s)s.scrollIntoView({behavior:'smooth'});},100);}if(page==='home')document.title='AqwaGel - Educational Posters Sri Lanka | අධ්‍යාපනික පෝස්ටර් ශ්‍රී ලංකාව';}
+function closeMob(){document.getElementById('mob-menu').classList.add('hidden');}
+
+function stars(r,sz){sz=sz||'text-xs';var h='';for(var i=1;i<=5;i++){if(i<=Math.floor(r))h+='<span class="iconify '+sz+' text-amber-400" data-icon="lucide:star"></span>';else if(i-r<1)h+='<span class="iconify '+sz+' text-amber-400" data-icon="lucide:star-half"></span>';else h+='<span class="iconify '+sz+' text-gray-200" data-icon="lucide:star"></span>';}return h;}
+
+/* 550x400 = 11:8 landscape ratio */
+function prodCard(p){var c=null;for(var i=0;i<CATS.length;i++){if(CATS[i].id===p.cat){c=CATS[i];break;}}var img=p.image||('https://picsum.photos/seed/'+(p.seed||p.id)+'/550/400');var inS=p.stock===1;var ar=uRatings[p.id]||p.rate;return '<div class="prod-card cursor-pointer group" onclick="go(\'product\',\''+p.id+'\')"><div class="aspect-[11/8] overflow-hidden relative"><img src="'+img+'" alt="'+p.name+' - AqwaGel" class="product-img w-full h-full object-cover" loading="lazy">'+(!inS?'<div class="absolute inset-0 bg-black/40 flex items-center justify-center"><span class="px-4 py-1.5 bg-red-500/90 rounded-full text-xs text-white font-semibold">Out of Stock</span></div>':'')+'<div class="absolute top-3 left-3"><span class="badge" style="background:white;box-shadow:0 2px 8px rgba(0,0,0,0.1);color:'+(c?c.color:'#666')+'">'+(c?c.name:'')+'</span></div></div><div class="p-4"><h3 class="text-sm font-semibold truncate text-[#2D2A26] group-hover:text-[#3B82F6] transition-colors">'+p.name+'</h3><p class="text-xs text-[#A09890] mt-0.5 truncate sinhala">'+(p.si||'')+'</p><div class="flex items-center gap-1 mt-2">'+stars(ar,'text-[10px]')+'<span class="text-[10px] text-[#A09890] ml-1">'+ar+'</span></div><div class="flex items-center justify-between mt-3 pt-3 border-t border-[#EDE8E0]"><span class="text-lg font-bold text-[#2D2A26]">Rs. '+p.price.toLocaleString()+'</span>'+(inS?'<span class="flex items-center gap-1 text-[10px] text-green-600 font-semibold"><span class="w-1.5 h-1.5 rounded-full bg-green-500"></span>In Stock</span>':'<span class="text-[10px] text-red-500 font-semibold">Out of Stock</span>')+'</div></div></div>';}
+
+function renderCats(){var g=document.getElementById('cats-grid');var h='';for(var i=0;i<CATS.length;i++){var c=CATS[i];var cnt=0;for(var j=0;j<prods.length;j++){if(prods[j].cat===c.id)cnt++;}h+='<div class="cat-card" style="--cat-color:'+c.color+'" onclick="go(\'category\',\''+c.id+'\')"><div class="w-12 h-12 rounded-xl flex items-center justify-center mb-4" style="background:'+c.color+'10"><span class="iconify" data-icon="'+c.icon+'" data-width="24" style="color:'+c.color+'"></span></div><h3 class="text-base font-semibold text-[#2D2A26]">'+c.name+'</h3><p class="text-xs text-[#A09890] mt-1 sinhala">'+c.si+'</p><div class="flex items-center justify-between mt-4"><span class="text-xs text-[#A09890]">'+cnt+' items</span><span class="iconify text-[#D6CFC4] group-hover:text-[#2D2A26] group-hover:translate-x-1 transition-all" data-icon="lucide:arrow-right" data-width="14"></span></div></div>';}g.innerHTML=h;}
+function renderFeat(){var feat=[];for(var i=0;i<prods.length;i++){if(prods[i].rate>=4.8)feat.push(prods[i]);}feat=feat.slice(0,4);var g=document.getElementById('feat-grid');var h='';for(var i=0;i<feat.length;i++)h+=prodCard(feat[i]);g.innerHTML=h;}
+function renderFtCats(){var el=document.getElementById('ft-cats');var h='';for(var i=0;i<Math.min(6,CATS.length);i++){h+='<div class="text-xs text-gray-400 hover:text-white transition-colors cursor-pointer" onclick="go(\'category\',\''+CATS[i].id+'\')">'+CATS[i].name+'</div>';}el.innerHTML=h;}
+
+function renderCatPage(){var c=null;for(var i=0;i<CATS.length;i++){if(CATS[i].id===curCat){c=CATS[i];break;}}if(!c){go('home');return;}document.getElementById('cat-header').innerHTML='<div class="flex items-center gap-4 mb-2"><div class="w-14 h-14 rounded-xl flex items-center justify-center" style="background:'+c.color+'10"><span class="iconify" data-icon="'+c.icon+'" data-width="28" style="color:'+c.color+'"></span></div><div><h1 class="text-3xl sm:text-5xl font-semibold tracking-tight text-[#2D2A26]">'+c.name+'</h1><p class="text-[#A09890] text-sm sinhala mt-1">'+c.si+'</p></div></div>';renderCatProds();}
+function renderCatProds(){var filtered=[];for(var i=0;i<prods.length;i++){if(prods[i].cat===curCat)filtered.push(prods[i]);}var sv=document.getElementById('sort-sel');var sort=sv?sv.value:'default';if(sort==='price-low')filtered.sort(function(a,b){return a.price-b.price;});else if(sort==='price-high')filtered.sort(function(a,b){return b.price-a.price;});else if(sort==='rating')filtered.sort(function(a,b){return(uRatings[b.id]||b.rate)-(uRatings[a.id]||a.rate);});document.getElementById('prod-count').textContent=filtered.length;var g=document.getElementById('cat-prods-grid');if(filtered.length===0){g.innerHTML='<div class="col-span-full text-center py-20"><span class="iconify text-[#D6CFC4] mx-auto" data-icon="lucide:package-open" data-width="48"></span><p class="text-[#A09890] mt-4">No products yet.</p></div>';return;}var h='';for(var i=0;i<filtered.length;i++)h+=prodCard(filtered[i]);g.innerHTML=h;}
+
+function renderProdPage(){var p=null;for(var i=0;i<prods.length;i++){if(prods[i].id===curProd){p=prods[i];break;}}if(!p){go('home');return;}var c=null;for(var i=0;i<CATS.length;i++){if(CATS[i].id===p.cat){c=CATS[i];break;}}var img=p.image||('https://picsum.photos/seed/'+(p.seed||p.id)+'/550/400');var inS=p.stock===1;var ar=uRatings[p.id]||p.rate;document.title=p.name+' - AqwaGel | Rs.'+p.price.toLocaleString();document.getElementById('prod-back-btn').onclick=function(){go('category',p.cat);};var schema={"@context":"https://schema.org","@type":"Product","name":p.name,"alternateName":p.si||"","description":p.desc,"image":img,"brand":{"@type":"Brand","name":"AqwaGel"},"offers":{"@type":"Offer","price":p.price,"priceCurrency":"LKR","availability":inS?"https://schema.org/InStock":"https://schema.org/OutOfStock"},"aggregateRating":{"@type":"AggregateRating","ratingValue":ar,"reviewCount":p.rev||1,"bestRating":5}};document.getElementById('prod-schema-el').innerHTML='';var sc=document.createElement('script');sc.type='application/ld+json';sc.textContent=JSON.stringify(schema);document.getElementById('prod-schema-el').appendChild(sc);var rel=[];for(var i=0;i<prods.length;i++){if(prods[i].cat===p.cat&&prods[i].id!==p.id)rel.push(prods[i]);}rel=rel.slice(0,4);var relH='';for(var i=0;i<rel.length;i++)relH+=prodCard(rel[i]);var waM=encodeURIComponent("Hi AqwaGel! I'm interested in \""+p.name+"\" - Rs. "+p.price.toLocaleString()+".");var waC=encodeURIComponent("Hi AqwaGel! I'd like to customize \""+p.name+"\" - custom size/design.");var ratLabel=uRatings[p.id]?'Your rating: '+uRatings[p.id]+'★':'Not rated';var starH='';for(var i=1;i<=5;i++){var cls=(i<=Math.floor(ar))?'text-amber-400':'text-gray-200';starH+='<span class="iconify text-2xl '+cls+'" data-icon="lucide:star" style="cursor:pointer" onclick="rateP(\''+p.id+'\','+i+')"></span>';}document.getElementById('prod-detail').innerHTML='<div class="grid md:grid-cols-2 gap-8 lg:gap-12"><div class="aspect-[11/8] rounded-2xl overflow-hidden border warm-border shadow-sm bg-white relative"><img src="'+img+'" alt="'+p.name+' - AqwaGel" class="w-full h-full object-cover" loading="lazy">'+(!inS?'<div class="absolute inset-0 bg-black/40 flex items-center justify-center rounded-2xl"><span class="px-6 py-2 bg-red-500/90 rounded-full text-sm text-white font-semibold">Out of Stock</span></div>':'')+'</div><div class="flex flex-col justify-center"><span class="badge w-fit mb-4" style="background:'+(c?c.color:'#888')+'12;color:'+(c?c.color:'#888')+'">'+(c?c.name:'')+' · '+(c?c.si:'')+'</span><h1 class="text-2xl sm:text-4xl font-semibold tracking-tight text-[#2D2A26]">'+p.name+'</h1><p class="text-[#A09890] text-sm sinhala mt-1">'+(p.si||'')+'</p><div class="flex items-center gap-3 mt-4"><div class="flex items-center gap-1">'+stars(ar)+'</div><span class="text-sm text-[#A09890]">'+ar+' ('+(p.rev||0)+' reviews)</span></div><div class="mt-6"><span class="text-3xl sm:text-4xl font-bold text-[#2D2A26]">Rs. '+p.price.toLocaleString()+'</span><div class="flex items-center gap-2 mt-2">'+(inS?'<span class="flex items-center gap-1.5 text-sm text-green-600 font-semibold"><span class="w-2 h-2 rounded-full bg-green-500 animate-pulse"></span>In Stock</span>':'<span class="text-sm text-red-500 font-semibold">Out of Stock</span>')+'<span class="text-xs text-[#A09890]">· Professional Print</span></div></div><div class="mt-6 p-4 rounded-xl bg-white border warm-border"><p class="text-sm text-[#6B6560] leading-relaxed">'+p.desc+'</p>'+(p.descSi?'<p class="text-sm text-[#A09890] leading-relaxed mt-2 sinhala">'+p.descSi+'</p>':'')+'</div><div class="mt-6"><p class="text-xs text-[#A09890] mb-2">Rate this product:</p><div class="flex items-center gap-1">'+starH+'<span class="text-xs text-[#A09890] ml-2" id="rl-'+p.id+'">'+ratLabel+'</span></div></div><div class="flex flex-col sm:flex-row gap-3 mt-8"><a href="https://wa.me/94717299504?text='+waM+'" target="_blank" class="flex-1 py-3.5 bg-[#25D366] text-white text-sm font-bold uppercase tracking-widest rounded-lg hover:bg-[#20BD5A] transition-all flex items-center justify-center gap-2 no-underline"><svg width="18" height="18" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>Order via WhatsApp</a><a href="https://wa.me/94717299504?text='+waC+'" target="_blank" class="flex-1 py-3.5 border-2 border-[#FF3B00] text-[#FF3B00] text-sm font-bold uppercase tracking-widest rounded-lg hover:bg-[#FF3B00] hover:text-white transition-all flex items-center justify-center gap-2 no-underline"><span class="iconify" data-icon="lucide:wand-2" data-width="16"></span>Customize as your request</a></div><div class="mt-6 grid grid-cols-3 gap-3"><div class="text-center p-3 rounded-lg bg-white border warm-border"><span class="iconify text-[#A09890] mx-auto" data-icon="lucide:printer" data-width="16"></span><div class="text-[10px] text-[#A09890] mt-1">Pro Printed</div></div><div class="text-center p-3 rounded-lg bg-white border warm-border"><span class="iconify text-[#A09890] mx-auto" data-icon="lucide:truck" data-width="16"></span><div class="text-[10px] text-[#A09890] mt-1">Island Wide</div></div><div class="text-center p-3 rounded-lg bg-white border warm-border"><span class="iconify text-[#A09890] mx-auto" data-icon="lucide:shield-check" data-width="16"></span><div class="text-[10px] text-[#A09890] mt-1">Artyhomes Quality</div></div></div></div></div>'+(rel.length>0?'<div class="mt-20"><h2 class="text-xl font-semibold mb-6 text-[#2D2A26]">Related Products</h2><div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">'+relH+'</div></div>':'');}
+
+function rateP(id,val){uRatings[id]=val;try{localStorage.setItem('aqwagel_rat',JSON.stringify(uRatings));}catch(e){}toast('Rated '+val+' star'+(val>1?'s':'')+'! Thank you.');renderProdPage();}
+function sendContact(ev){ev.preventDefault();toast('Message sent! We will contact you soon.');ev.target.reset();}
+function toast(msg){var el=document.getElementById('toast-el');el.textContent=msg;el.classList.add('show');setTimeout(function(){el.classList.remove('show');},3000);}
+function adminLogin(ev){ev.preventDefault();var u=document.getElementById('adm-user').value;var p=document.getElementById('adm-pass').value;if(u==='admin'&&p==='admin'){go('admin');setTimeout(function(){admTab('products');renderAdmProds();},50);document.getElementById('login-err').classList.add('hidden');}else{document.getElementById('login-err').classList.remove('hidden');}}
+function adminOut(){go('home');}
+function admTab(tab){var tabs=document.querySelectorAll('.adm-t');for(var i=0;i<tabs.length;i++)tabs[i].classList.add('hidden');document.getElementById('at-'+tab).classList.remove('hidden');var links=document.querySelectorAll('#adm-sidebar a');for(var i=0;i<links.length;i++)links[i].classList.remove('active-admin');for(var i=0;i<links.length;i++){if(links[i].getAttribute('onclick')&&links[i].getAttribute('onclick').indexOf(tab)!==-1)links[i].classList.add('active-admin');}var mobs=document.querySelectorAll('.adm-mob');for(var i=0;i<mobs.length;i++){if(mobs[i].getAttribute('data-t')===tab){mobs[i].style.color='#3B82F6';mobs[i].style.borderBottom='2px solid #3B82F6';}else{mobs[i].style.color='';mobs[i].style.borderBottom='';}}if(tab==='products')renderAdmProds();}
+function renderAdmProds(){var f=document.getElementById('adm-cat-f');var fv=f?f.value:'all';var filtered=[];for(var i=0;i<prods.length;i++){if(fv==='all'||prods[i].cat===fv)filtered.push(prods[i]);}var el=document.getElementById('adm-prods-list');if(filtered.length===0){el.innerHTML='<div class="text-center py-12 text-[#A09890]">No products found.</div>';return;}var h='';for(var i=0;i<filtered.length;i++){var p=filtered[i];var c=null;for(var j=0;j<CATS.length;j++){if(CATS[j].id===p.cat){c=CATS[j];break;}}var img=p.image||('https://picsum.photos/seed/'+(p.seed||p.id)+'/80/60');h+='<div class="bg-white rounded-xl p-4 flex items-center gap-4 border warm-border hover:shadow-sm transition-shadow"><img src="'+img+'" alt="'+p.name+'" class="w-16 h-12 rounded-lg object-cover flex-shrink-0" loading="lazy"><div class="flex-1 min-w-0"><div class="text-sm font-semibold truncate text-[#2D2A26]">'+p.name+'</div><div class="text-xs text-[#A09890]">'+(c?c.name:p.cat)+' · Rs.'+p.price.toLocaleString()+' · <span class="'+(p.stock===1?'text-green-600':'text-red-500')+'">'+(p.stock===1?'In Stock':'Out of Stock')+'</span></div></div><div class="flex items-center gap-2 flex-shrink-0"><button onclick="editProd(\''+p.id+'\')" class="p-2 rounded-lg hover:bg-blue-50 text-[#A09890] hover:text-[#3B82F6] transition-colors"><span class="iconify" data-icon="lucide:pencil" data-width="14"></span></button><button onclick="delProd(\''+p.id+'\')" class="p-2 rounded-lg hover:bg-red-50 text-[#A09890] hover:text-red-500 transition-colors"><span class="iconify" data-icon="lucide:trash-2" data-width="14"></span></button></div></div>';}el.innerHTML=h;}
+function editProd(id){var p=null;for(var i=0;i<prods.length;i++){if(prods[i].id===id){p=prods[i];break;}}if(!p)return;document.getElementById('ed-id').value=id;document.getElementById('p-name').value=p.name||'';document.getElementById('p-namesi').value=p.si||'';document.getElementById('p-cat').value=p.cat||'';document.getElementById('p-price').value=p.price||0;document.getElementById('p-stock').value=p.stock===1?'in-stock':'out-of-stock';document.getElementById('p-desc').value=p.desc||'';document.getElementById('p-descsi').value=p.descSi||'';document.getElementById('p-img').value=p.image||'';document.getElementById('p-sten').value=p.seoTitleEn||'';document.getElementById('p-stsi').value=p.seoTitleSi||'';document.getElementById('p-sden').value=p.seoDescEn||'';document.getElementById('p-sdsi').value=p.seoDescSi||'';document.getElementById('adm-form-title').textContent='Edit Product';admTab('add');}
+function delProd(id){if(!confirm('Delete this product?'))return;var np=[];for(var i=0;i<prods.length;i++){if(prods[i].id!==id)np.push(prods[i]);}prods=np;try{localStorage.setItem('aqwagel_prods_v2',JSON.stringify(prods));}catch(e){}renderAdmProds();renderCats();renderFeat();toast('Product deleted.');}
+function saveProd(ev){ev.preventDefault();var editId=document.getElementById('ed-id').value;var data={id:editId||('p'+Date.now()),cat:document.getElementById('p-cat').value,name:document.getElementById('p-name').value,si:document.getElementById('p-namesi').value,price:parseInt(document.getElementById('p-price').value)||0,stock:document.getElementById('p-stock').value==='in-stock'?1:0,desc:document.getElementById('p-desc').value,descSi:document.getElementById('p-descsi').value,image:document.getElementById('p-img').value||'',seed:editId?(function(){for(var i=0;i<prods.length;i++){if(prods[i].id===editId)return prods[i].seed||editId;}return editId;})():('p'+Date.now()),rate:editId?(function(){for(var i=0;i<prods.length;i++){if(prods[i].id===editId)return prods[i].rate||4.5;}return 4.5;})():4.5,rev:editId?(function(){for(var i=0;i<prods.length;i++){if(prods[i].id===editId)return prods[i].rev||0;}return 0;})():0,seoTitleEn:document.getElementById('p-sten').value,seoTitleSi:document.getElementById('p-stsi').value,seoDescEn:document.getElementById('p-sden').value,seoDescSi:document.getElementById('p-sdsi').value};if(editId){for(var i=0;i<prods.length;i++){if(prods[i].id===editId){prods[i]=data;break;}}}else{prods.push(data);}try{localStorage.setItem('aqwagel_prods_v2',JSON.stringify(prods));}catch(e){}clearProdForm();admTab('products');renderCats();renderFeat();toast(editId?'Product updated!':'Product added!');}
+function clearProdForm(){document.getElementById('ed-id').value='';document.getElementById('adm-form-title').textContent='Add New Product';var fields=document.querySelectorAll('#prod-form input:not([type=hidden]), #prod-form textarea, #prod-form select');for(var i=0;i<fields.length;i++){if(fields[i].tagName==='SELECT')fields[i].selectedIndex=0;else fields[i].value='';}}
+function fillAdmSels(){var cf=document.getElementById('adm-cat-f');var pc=document.getElementById('p-cat');for(var i=0;i<CATS.length;i++){cf.innerHTML+='<option value="'+CATS[i].id+'">'+CATS[i].name+'</option>';pc.innerHTML+='<option value="'+CATS[i].id+'">'+CATS[i].name+' - '+CATS[i].si+'</option>';}}
+function loadSEO(){try{var s=localStorage.getItem('aqwagel_seo');if(s){var d=JSON.parse(s);document.getElementById('seo-t-en').value=d.tEn||'';document.getElementById('seo-d-en').value=d.dEn||'';document.getElementById('seo-t-si').value=d.tSi||'';document.getElementById('seo-d-si').value=d.dSi||'';}else{document.getElementById('seo-t-en').value='AqwaGel - Educational Posters Sri Lanka';document.getElementById('seo-d-en').value='Premium educational posters in Sri Lanka. World maps, solar systems, alphabet charts & more.';document.getElementById('seo-t-si').value='AqwaGel - අධ්‍යාපනික පෝස්ටර් ශ්‍රී ලංකාව';document.getElementById('seo-d-si').value='ශ්‍රී ලංකාවේ ප්‍රවීණ අධ්‍යාපනික පෝස්ටර්.';}}catch(e){}}
+function saveSEO(ev){ev.preventDefault();var data={tEn:document.getElementById('seo-t-en').value,dEn:document.getElementById('seo-d-en').value,tSi:document.getElementById('seo-t-si').value,dSi:document.getElementById('seo-d-si').value};try{localStorage.setItem('aqwagel_seo',JSON.stringify(data));}catch(e){}toast('SEO settings saved!');}
+init();
+</script>
+</body>
+</html>
